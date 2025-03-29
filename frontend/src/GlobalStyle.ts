@@ -96,4 +96,14 @@ export const GlobalStyle = createGlobalStyle`
       inset: 0;
     }
   }
+
+  select {
+    font-weight: normal;
+    padding-inline: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: var(--siit-color-surface-base);
+    border: 1px solid var(--siit-color-neutral);
+    height: 1.5rem;
+    font-size: .875rem;
+  }
 `;

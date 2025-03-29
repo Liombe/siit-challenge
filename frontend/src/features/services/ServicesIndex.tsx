@@ -1,10 +1,16 @@
-import { useFetchServices } from "./services.api";
 import { Stack } from "../../components/Stack";
+import { Service } from "../../types/api";
 import { ServiceListItem } from "./components/ServiceListItem";
 
-export function ServicesIndex() {
-  const { services, error, isLoading } = useFetchServices();
-
+export function ServicesIndex({
+  services,
+  error,
+  isLoading,
+}: {
+  services: Array<Service>;
+  error: boolean;
+  isLoading: boolean;
+}) {
   if (error) {
     return <h1>Error</h1>;
   }
