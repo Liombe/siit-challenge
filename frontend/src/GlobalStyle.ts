@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :root {
     --siit-color-accent: #504ff3;
+    --siit-color-accent-light: rgb(from var(--siit-color-accent) r g b / .1);
     --siit-color-neutral: #d5d7d9;
 
     --siit-color-surface-base: white;

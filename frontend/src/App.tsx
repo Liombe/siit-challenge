@@ -1,5 +1,6 @@
 import { GlobalStyle } from "./GlobalStyle";
 import { Container } from "./components/Container";
+import { ServicesIndex } from "./features/services/ServicesIndex";
 import { UsersIndex } from "./features/users";
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
         <Container>
           <h1>Siit</h1>
           <UsersIndex />
+          <ServicesIndex />
         </Container>
       </main>
     </>

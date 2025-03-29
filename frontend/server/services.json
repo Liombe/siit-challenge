@@ -13,7 +13,7 @@
     "id": 2,
     "name": "Aircall",
     "website_url": "https://aircall.io/",
-    "logo_url": "https://brand.aircall.co/wp-content/themes/aircallbrand/static/illustrations/cards/main-logo.svg",
+    "logo_url": "https://icons.iconarchive.com/icons/simpleicons-team/simple/48/aircall-icon.png",
     "price": {
       "cost_per_user": 40,
       "flat_cost": 120,
@@ -23,7 +23,7 @@
     "id": 3,
     "name": "Carta",
     "website_url": "https://app.carta.com/",
-    "logo_url": "https://www.carta.com/wp-content/uploads/2020/04/cartalogo.svg",
+    "logo_url": "https://images.ctfassets.net/y88td1zx1ufe/6RvXq471HohgYLlne9iKay/a3b1f43755553dd2d4dad33a471c4aeb/Generic_Company_news.png",
     "price": {
       "cost_per_user": 50,
       "flat_cost": 0,
@@ -33,7 +33,7 @@
     "id": 4,
     "name": "Swile",
     "website_url": "https://www.swile.co/",
-    "logo_url": "https://blog.swile.co/wp-content/uploads/2020/09/1003487899.png",
+    "logo_url": "https://thumbs.bfldr.com/at/mncjmtnt2zb6jksm7znkk4vg/v/1203059275?expiry=1743887477&fit=bounds&height=800&sig=YTk2MGRkYTE0MzQ1YjlhMWFlNzgwZmIzNjVhOTlhMGQ1NzQ3ZWRiOQ%3D%3D&width=1100",
     "price": {
       "cost_per_user": 10,
       "flat_cost": 0,
@@ -43,7 +43,7 @@
     "id": 5,
     "name": "Payfit",
     "website_url": "https://payfit.com/",
-    "logo_url": "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/by8agut407gqlpztf4qk",
+    "logo_url": "https://backstage.payfit.com/content/images/size/w300/2021/12/51847286_2298912827100616_2289752481174913024_n.png",
     "price": {
       "cost_per_user": 20,
       "flat_cost": 0,

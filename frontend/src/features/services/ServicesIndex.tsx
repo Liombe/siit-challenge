@@ -11,13 +11,12 @@ export function ServicesIndex() {
 
   if (isLoading) {
     return (
-      <Stack $dir="column" $gap="1rem">
+      <Stack $dir="column" $gap="0">
         {Array.from(Array(5), (_, index) => index).map(() => (
           <ServiceListItem
             state="loading"
-            name="User with a firstname and a lastname"
-            position="User position"
-            avatar_url="https://"
+            name="A good service"
+            logo_url="https://"
           />
         ))}
       </Stack>
@@ -27,7 +26,7 @@ export function ServicesIndex() {
   return (
     <>
       <h2>Services</h2>
-      <Stack $dir="column" $gap="1rem">
+      <Stack $dir="column" $gap="0">
         {services.map((service) => (
           <ServiceListItem {...service} />
         ))}
