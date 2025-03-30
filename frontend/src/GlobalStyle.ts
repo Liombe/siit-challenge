@@ -52,6 +52,10 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
   }
 
+  svg {
+    flex-shrink: 0;
+  }
+
   /* 7. Inherit fonts for form controls */
   input, button, textarea, select {
     font: inherit;

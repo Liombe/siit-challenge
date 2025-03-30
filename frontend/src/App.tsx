@@ -7,13 +7,6 @@ import { UsersIndex } from "./features/users";
 import { useFetchUsers } from "./features/users/users.api";
 
 export default function App() {
-  const [serviceId, setServiceId] = useState<String>("");
-  const {
-    users,
-    error: usersError,
-    isValidating: usersIsLoading,
-  } = useFetchUsers({ serviceId });
-
   const {
     services,
     error: servicesError,
@@ -26,22 +19,7 @@ export default function App() {
       <main>
         <Container>
           <h1>Siit</h1>
-          <UsersIndex
-            users={users}
-            error={usersError}
-            isLoading={usersIsLoading}
-            filters={
-              <select
-                value={String(serviceId)}
-                onChange={(e) => setServiceId(e.target.value)}
-              >
-                <option value="">Select service</option>
-                {services?.map((service) => (
-                  <option value={String(service.id)}>{service.name}</option>
-                ))}
-              </select>
-            }
-          />
+          <UsersIndex services={services} />
           <ServicesIndex
             services={services}
             error={servicesError}

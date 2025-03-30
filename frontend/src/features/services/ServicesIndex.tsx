@@ -1,42 +1,18 @@
-import { Stack } from "../../components/Stack";
 import { Service } from "../../types/api";
-import { ServiceListItem } from "./components/ServiceListItem";
+import { useFetchUsers } from "../users/users.api";
+import { ServicesList } from "./ServicesList";
 
-export function ServicesIndex({
-  services,
-  error,
-  isLoading,
-}: {
+export function ServicesIndex(props: {
   services: Array<Service>;
   error: boolean;
   isLoading: boolean;
 }) {
-  if (error) {
-    return <h1>Error</h1>;
-  }
-
-  if (isLoading) {
-    return (
-      <Stack $dir="column" $gap="0">
-        {Array.from(Array(5), (_, index) => index).map(() => (
-          <ServiceListItem
-            state="loading"
-            name="A good service"
-            logo_url="https://"
-          />
-        ))}
-      </Stack>
-    );
-  }
+  const { users } = useFetchUsers({});
 
   return (
     <>
       <h2>Services</h2>
-      <Stack $dir="column" $gap="0">
-        {services.map((service) => (
-          <ServiceListItem {...service} />
-        ))}
-      </Stack>
+      <ServicesList users={users} {...props} />
     </>
   );
 }
