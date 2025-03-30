@@ -7,8 +7,6 @@ const shine = keyframes`
 `;
 
 export const GlobalStyle = createGlobalStyle`
-  @import url(https://fonts.bunny.net/css?family=inter:400,600,700);
-
   :root {
     --siit-color-accent: #504ff3;
     --siit-color-accent-light: rgb(from var(--siit-color-accent) r g b / .1);
@@ -86,6 +84,10 @@ export const GlobalStyle = createGlobalStyle`
     margin-block: 1.5em .5em;
   }
 
+  main {
+    margin-bottom: 3rem;
+  }
+
   [data-state="loading"] [data-bone] {
     position: relative;
     min-width: 4ch;
@@ -101,13 +103,23 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  select {
+  :is(input, select) {
+    display: inline-block;
+    max-width: 100%;
+    min-width: 0;
+    height: 2rem;
+    padding-inline: 0.75rem;
+    line-height: 2rem;
+    font-size: .875rem;
     font-weight: normal;
-    padding-inline: 0.25rem;
+    border: 1px solid var(--siit-color-neutral);
     border-radius: 0.25rem;
     background-color: var(--siit-color-surface-base);
-    border: 1px solid var(--siit-color-neutral);
-    height: 1.5rem;
-    font-size: .875rem;
+  }
+
+  :is(input, select):focus {
+    outline: 2px solid var(--siit-color-accent);
+    outline-offset: 1px;
+    border-color: rgb(from var(--siit-color-accent) r g b / 0.3);
   }
 `;

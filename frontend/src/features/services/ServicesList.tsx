@@ -21,8 +21,9 @@ export function ServicesList({
   if (isLoading) {
     return (
       <Stack $dir="column" $gap="0">
-        {Array.from(Array(5), (_, index) => index).map(() => (
+        {Array.from(Array(5), (_, index) => index).map((_, index) => (
           <ServiceListItem
+            key={String(index)}
             state="loading"
             name="A good service"
             logo_url="https://"
@@ -34,7 +35,7 @@ export function ServicesList({
 
   return (
     <Stack $dir="column" $gap="0">
-      {services.map((service) => {
+      {services?.map((service) => {
         const activeUsers = users?.filter((user) =>
           user.service_ids.includes(service.id)
         );

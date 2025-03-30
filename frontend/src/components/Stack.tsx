@@ -5,10 +5,14 @@ export const Stack = styled.div<{
   $dir: "row" | "column";
   $justify: string;
   $align: string;
+  $wrap: string;
 }>`
   display: flex;
+  flex-wrap: ${(props) => props.$wrap || "initial"};
   gap: ${(props) => props.$gap || "0.5rem"};
   flex-direction: ${(props) => props.$dir || "row"};
-  justify-content: ${(props) => props.$justify || "stretch"};
-  align-items: ${(props) => props.$align || "stretch"};
+  justify-content: ${(props) => props.$justify || "initial"};
+  align-items: ${(props) => props.$align || "initial"};
+  min-width: 0;
+  min-height: 0;
 `;
